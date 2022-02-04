@@ -36,3 +36,9 @@ input {
 img {
 	max-width: 300px;
 }
+
+ul li {
+	display: flex;
+	width: 200px;
+}
+

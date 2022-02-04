@@ -1,6 +1,78 @@
-Not implemented yet! 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="profile.css" />
+  <title>My Profile</title>
+</head>
 
-<br>
-<br>
+<body>
+  <header>
+  <nav>
+		<ol class="navol">
+	        <li class="crumb"><a href="./home.html">Home</a></li>
+	        <li class="crumb"><a href="./profile.html">Profile</a></li>
+	        <li class="crumb"><a href="./about.html">About</a></li>
+	    </ol>
+      <button class="btns" id="color">My Favorite Color</button>
+<button class="btns" id="place">My Favorite Place</button>
+<button class="btns" id="ritual">My Favorite Ritual</button>
+      	</nav>
+</header>
 
-<a href="./home.html"><< Back </a>
+<main>
+ <div class="container">
+<div class="toprow">
+  <section class="profilecontainer">
+    <h3 class="name first">Tarantula</h3>
+    <img class="pic" src="images/pic.jpg"/>
+    <h3 class="name last">Ducky</h3>
+  </section>
+
+  <section class="skillscontainer">
+    <h2 class="skillsheader">Skills</h2>
+    <div class="skillsparent">
+    <p class="skill"><span class="bold">Skill 1:</span> <span class="right">Floating in the bathtub</span></p>
+    <p class="skill"><span class="bold">Skill 2:</span><span class="right">Terrifying roommates</span></p>
+    <p class="skill"><span class="bold">Skill 3:</span><span class="right">Creating Chaos</span></p>
+    <p class="skill"><span class="bold">Skill 4:</span><span class="right">Speed Reading</span></p>
+    <p class="skill"><span class="bold">Skill 5:</span><span class="right">Guitar</span></p>
+  </div>
+  </section>
+</div>
+
+<div class="middlerow">
+  <section class="interestscontainer">
+    <h2>Interests</h2>
+    <div class="interestsparent">
+      <h3 class="interest">World Wide Web</h3>
+      <h3 class="interest">Water Polo</h3>
+    
+      <h3 class="interest">Cyrpto</h3>
+      <h3 class="interest">Aquariums</h3>
+    </div>
+  </section>
+
+  <section class="careercontainer">
+    <h2>Career Goals</h2>
+    <form>
+      <label for="careerinput">Career Choice: <input id="careerinput" type="text" placeholder="your favorite career..."/></label>
+      <fieldset>
+        <legend>How much does it make?</legend>
+        <label class="income" for="one"><input id="one" type="radio" name="money"/> 0 - 25k</label>
+        <label class="income" for="two"><input id="two" type="radio" name="money"/> 25k - 50k</label>
+        <label class="income" for="three"><input id="three" type="radio" name="money"/> 50k - 90k</label>
+        <label class="income" for="four"><input id="four" type="radio" name="money"/> 90k+</label>
+      </fieldset>
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </section>
+</div>
+</div>
+</main>  
+
+<script src="profile.js"></script>
+</body>
+
+</html>
